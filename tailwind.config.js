@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'acme': ['Acme', 'sans-serif'],
+        'lilita': ['Lilita One', 'sans-serif'],
+        'monster': ['Montserrat Alternates',' sans-serif'],
+        'play': ['Playfair Display', 'serif'],
+        'prata': ['Prata', 'serif'],
+        'arch': ['Architects Daughter', 'cursive']
+      }
+    },
   },
   plugins: [],
 }
