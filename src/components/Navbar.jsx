@@ -3,7 +3,8 @@ import Logo2 from '../assets/fullLogo-foodTruck-gray.png'
 
 const Navbar = () => {
   return (
-    <div className="shadow-md w-full sticky top-0 left-0">
+    <div className="
+     w-full relative top-0 left-0 bg-transparent ">
       <div className="md:flex items-center justify-between  text-red-600 py-4 px-2">
         <div 	className="font-bold text-2xl cursor-pointer flex items-center font-ari">
         <span className="w-[6.5rem] mr-2">
@@ -12,7 +13,7 @@ const Navbar = () => {
 							alt="logo"
 						/>
 					</span>
-						<span className='mt-12'>3 Apple 3 Coconut</span>
+						<span className='mt-12 font-acme text-3xl'>3 Apple 3 Coconut</span>
         </div>
       </div>
     </div>

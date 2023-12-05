@@ -12,7 +12,9 @@ export default {
         'monster': ['Montserrat Alternates',' sans-serif'],
         'play': ['Playfair Display', 'serif'],
         'prata': ['Prata', 'serif'],
-        'arch': ['Architects Daughter', 'cursive']
+        'arch': ['Architects Daughter', 'cursive'],
+        'beau': ['Beau Rivage', 'cursive'],
+        'russo': ['Russo One', 'sans-serif']
       }
     },
   },
