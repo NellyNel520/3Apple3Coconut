@@ -3,40 +3,60 @@ import { useForm, ValidationError } from '@formspree/react'
 
 const SignupForm = () => {
 	const [state, handleSubmit] = useForm('myyqryqk')
-  if (state.succeeded) {
-    return <div>Thank you for signing up!</div>
-  }
+	if (state.succeeded) {
+		return (
+			<div className="flex flex-col justify-center items-center">
+				{/* need custom success message with styling */}
+				<img
+					src="https://img.icons8.com/ios/ffffff/70/checked--v1.png"
+					alt=""
+					className="mb-3"
+				/>
+				<h1 className="text-2xl font-prata text-white my-4">🎉 Success! </h1>
+				<p className='w-[65%] text-white'>
+					Get ready for a front-row seat to all the exciting updates, exclusive
+					content and discounts. 🚀 Keep an eye on your inbox for the latest
+					news and surprises.
+				</p>
+			</div>
+		)
+	}
 
 	return (
 		// <div>
-		<form onSubmit={handleSubmit}>
-			{/* <label htmlFor="email">Name</label> */}
+		<form
+			onSubmit={handleSubmit}
+			method="post"
+			action="https://formspree.io/f/myyqryqk"
+		>
 			<div className="border rounded-md w-[100%]">
 				<input
 					className="py-[10px] px-[25px]"
 					placeholder="Name"
 					type="text"
-					name='name'
-          id='name'
+					name="name"
+					id="name"
 					required
 				/>
-				<ValidationError field="name" prefix="Name" errors={state.errors} />
+				{/* may change later */}
+				<ValidationError field="name" prefix="name" errors={state.errors} />
 
 				<input
 					className=" py-[10px] px-[25px]"
 					placeholder="Email"
 					type="email"
 					name="email"
-          id="email"
+					id="email"
 				/>
 				<input
 					className=" py-[10px] px-[25px]"
 					type="phone number"
-					placeholder="Phone Number"
+					placeholder="Mobile Number"
 					name="phone"
-          id="phone"
-          required
+					id="phone"
+					required
 				/>
+				<ValidationError field="phone" prefix="phone" errors={state.errors} />
 				<button
 					className="bg-red-500 border-none text-white rounded-md py-[10px] px-[25px] hover:bg-green-500 hover:text-black"
 					type="submit"
