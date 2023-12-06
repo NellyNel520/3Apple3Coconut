@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo2 from '../assets/fullLogo-foodTruck-gray.png'
+import Logo2 from '../assets/fullLogo-foodTruck-white.png'
 
 const Navbar = () => {
   return (
@@ -13,7 +13,7 @@ const Navbar = () => {
 							alt="logo"
 						/>
 					</span>
-						<span className='mt-12 font-acme text-3xl'>3 Apple 3 Coconut</span>
+						<span className='mt-12 font-acme text-xl'>3 Apple 3 Coconut</span>
         </div>
       </div>
     </div>

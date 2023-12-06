@@ -5,18 +5,17 @@ const SignupForm = () => {
 	const [state, handleSubmit] = useForm('myyqryqk')
 	if (state.succeeded) {
 		return (
-			<div className="flex flex-col justify-center items-center">
+			<div className="flex flex-col justify-center items-center mt-[-2] py-0">
 				{/* need custom success message with styling */}
 				<img
-					src="https://img.icons8.com/ios/ffffff/70/checked--v1.png"
+					src="https://img.icons8.com/ios/ffffff/50/checked--v1.png"
 					alt=""
-					className="mb-3"
+					// className="mb-1"
 				/>
 				<h1 className="text-2xl font-prata text-white my-4">🎉 Success! </h1>
-				<p className='w-[65%] text-white'>
-					Get ready for a front-row seat to all the exciting updates, exclusive
-					content and discounts. 🚀 Keep an eye on your inbox for the latest
-					news and surprises.
+				<p className="w-[100%] text-white">
+					Keep an eye on your inbox for the latest news, exclusive content,
+					discounts and more!
 				</p>
 			</div>
 		)
@@ -29,9 +28,9 @@ const SignupForm = () => {
 			method="post"
 			action="https://formspree.io/f/myyqryqk"
 		>
-			<div className="border rounded-md w-[100%]">
+			<div className=" w-[100%]">
 				<input
-					className="py-[10px] px-[25px]"
+					className="rounded py-[10px] px-[25px]"
 					placeholder="Name"
 					type="text"
 					name="name"
@@ -42,14 +41,14 @@ const SignupForm = () => {
 				<ValidationError field="name" prefix="name" errors={state.errors} />
 
 				<input
-					className=" py-[10px] px-[25px]"
+					className=" rounded py-[10px] px-[25px]"
 					placeholder="Email"
 					type="email"
 					name="email"
 					id="email"
 				/>
 				<input
-					className=" py-[10px] px-[25px]"
+					className=" rounded py-[10px] px-[25px]"
 					type="phone number"
 					placeholder="Mobile Number"
 					name="phone"
