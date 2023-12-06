@@ -14,7 +14,7 @@ const UnderConstruction = () => {
 	}
 
 	return (
-		<div className="h-[full] bg-gradient-to-br from-green-700 to-yellow-400 relative bg-cover min-w-fit">
+		<div className="h-[100vh] bg-gradient-to-br from-green-700 to-yellow-400 relative bg-cover min-w-fit">
 			{/* bg-gradient-to-br from-green-700 to-yellow-400 */}
 			<Navbar />
 
