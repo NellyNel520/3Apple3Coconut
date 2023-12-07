@@ -14,7 +14,7 @@ const UnderConstruction = () => {
 	}
 
 	return (
-		<div className="h-[100vh] bg-gradient-to-br from-green-700 to-yellow-400 relative bg-cover min-w-fit">
+		<div className="h-[100%] bg-gradient-to-br from-green-700 to-yellow-400 relative bg-cover min-w-fit min-h-screen">
 			{/* bg-gradient-to-br from-green-700 to-yellow-400 */}
 			<Navbar />
 
@@ -28,7 +28,7 @@ const UnderConstruction = () => {
 				</div>
 
 				{/* <img src={ConstructionLogo} alt="" className="w-[15%]" /> */}
-				<img src={Logo} alt="" className="w-[30%] mb-4" />
+				<img src={Logo} alt="" className="w-[23%] mb-4" />
 
 				<p className="w-[60%] font-prata text-lg">
 					{/* Our website is currently under construction as we're working hard to
@@ -53,7 +53,8 @@ const UnderConstruction = () => {
 				</div>
 
 				{/* social links */}
-				<div className="my-10">
+				{/* my-10 pb-5 */}
+				<div className="bottom-0  my-[12%]">
 					<h1 className="mb-4 text-2xl font-monster text-gray-200 ">Follow Us!</h1>
 					<div className="flex flex-row">
 						<Link to="https://www.instagram.com/3apples3coconuts">
