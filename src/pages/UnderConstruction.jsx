@@ -14,7 +14,7 @@ const UnderConstruction = () => {
 	}
 
 	return (
-		<div className="h-[100%] bg-gradient-to-br from-green-700 to-yellow-400 relative bg-cover min-w-fit min-h-screen">
+		<div className="h-[100%] bg-gradient-to-br from-green-700 to-yellow-400 relative bg-cover min-w-fit min-h-screen min-w-full">
 			{/* bg-gradient-to-br from-green-700 to-yellow-400 */}
 			<Navbar />
 
@@ -54,7 +54,7 @@ const UnderConstruction = () => {
 
 				{/* social links */}
 				{/* my-10 pb-5 */}
-				<div className="bottom-0  my-[12%]">
+				<div className="bottom-0  mt-[4%]">
 					<h1 className="mb-4 text-2xl font-monster text-gray-200 ">Follow Us!</h1>
 					<div className="flex flex-row">
 						<Link to="https://www.instagram.com/3apples3coconuts">

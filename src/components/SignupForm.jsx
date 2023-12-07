@@ -2,7 +2,7 @@ import React from 'react'
 import { useForm, ValidationError } from '@formspree/react'
 
 const SignupForm = () => {
-	const [state, handleSubmit] = useForm('myyqryqk')
+	const [state, handleSubmit] = useForm('myyqrewj')
 	if (state.succeeded) {
 		return (
 			<div className="flex flex-col justify-center items-center mt-[-2] py-0">
@@ -26,7 +26,7 @@ const SignupForm = () => {
 		<form
 			onSubmit={handleSubmit}
 			method="post"
-			action="https://formspree.io/f/myyqryqk"
+			action="https://formspree.io/f/myyqrewj"
 		>
 			<div className=" w-[100%]">
 				<input
