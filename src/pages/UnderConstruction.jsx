@@ -28,9 +28,9 @@ const UnderConstruction = () => {
 				</div>
 
 				{/* <img src={ConstructionLogo} alt="" className="w-[15%]" /> */}
-				<img src={Logo} alt="" className="w-[23%] mb-4" />
+				<img src={Logo} alt="" className="w-[20%] mb-4" />
 
-				<p className="w-[60%] font-prata text-lg">
+				<p className="w-[60%] font-prata sm:text-md md:text-lg text-lg">
 					{/* Our website is currently under construction as we're working hard to
 					bring you an amazing online experience. We can't wait to share it with
 					you! In the meantime, sign up below to stay in the loop and be the
@@ -54,7 +54,7 @@ const UnderConstruction = () => {
 
 				{/* social links */}
 				{/* my-10 pb-5 */}
-				<div className="bottom-0  mt-[4%]">
+				<div className="bottom-0  mt-[2%]">
 					<h1 className="mb-4 text-2xl font-monster text-gray-200 ">Follow Us!</h1>
 					<div className="flex flex-row">
 						<Link to="https://www.instagram.com/3apples3coconuts">
